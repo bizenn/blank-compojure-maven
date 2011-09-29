@@ -5,7 +5,7 @@
 
 (defroutes main-routes
   (GET "/" [] "<h1>Hello World</h1>")
-  (route/not-found "<h1>Page not found</h1>"))
+  (route/not-found "Page not found"))
 
 (defn standalone-start [port]
   (run-jetty main-routes {:port port}))

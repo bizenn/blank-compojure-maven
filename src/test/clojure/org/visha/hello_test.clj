@@ -10,6 +10,6 @@
   (is (= 200 (:status (request "/" main-routes))))
   (is (= "<h1>Hello World</h1>" ((request "/" main-routes) :body)))
   (is (= 404 (:status (request "/nonexists" main-routes))))
-  (is (= "<h1>Page not found</h1>")))
+  (is (= "Page not found")))
 
 (run-tests)
